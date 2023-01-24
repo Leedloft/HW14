@@ -1,11 +1,12 @@
 import React, {useEffect} from 'react'
 import './App.css';
-import AddTodoContainer from "./container/add-todo";
-import TodoListContainer from "./container/todo-list";
-import FilterButton from "./container/filter-buttons";
 import {useDispatch, useSelector} from "react-redux";
 import postOperations from './redux/post/thunk'
-import FormModule from "./container/form";
+import {Route, Switch} from "react-router-dom";
+import SignIn from "./container/signin";
+import AllItems from "./container/allitems";
+import LogInBlock from "./container/login";
+import SignIn_block from "./container/signin_block";
 
 function App() {
     const posts = useSelector(state => state.posts.list)
@@ -14,9 +15,9 @@ function App() {
     const create = useSelector(state => state.posts.list)
     const delete1 = useSelector(state => state.posts)
     const dispatch = useDispatch()
-    const {fetchPosts, fetchPostById,fetchUpdatePosts, fetchCreatePost} = postOperations
+    const {fetchPosts, fetchPostById, fetchUpdatePosts, fetchCreatePost} = postOperations
     useEffect(() => {
-        // dispatch(postOperations.fetchPosts())
+        dispatch(postOperations.fetchPosts())
         // dispatch(postOperations.fetchPostById(2))
         dispatch(postOperations.fetchUpdatePosts(3))
         // dispatch(postOperations.fetchCreatePost())
@@ -25,16 +26,18 @@ function App() {
     }, [])
     // console.log(posts, 'posts')
     // console.log(post, 'post')
-    console.log(update, 'update')
+    // console.log(update, 'update')
     // console.log(create, 'create')
-    console.log(delete1, 'delete')
+    // console.log(delete1, 'delete')
 
     return (
         <div className='main_block'>
-                <AddTodoContainer/>
-                <FilterButton/>
-                <TodoListContainer/>
-            <FormModule/>
+                <SignIn/>
+            <Switch>
+                <Route component={AllItems} exact path={'/'}/>
+                <Route component={SignIn_block} exact path={'/SignIn'}/>
+                <Route component={LogInBlock} exact path={'/LogIn'}/>
+            </Switch>
         </div>
     );
 }

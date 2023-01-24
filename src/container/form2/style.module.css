@@ -1,0 +1,73 @@
+.label_styles{
+    display: block;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+}
+.input_styles {
+    width: 350px;
+    height: 57px;
+    border-radius: 3px;
+    border-color: rgba(28, 55, 90, 0.16);
+    padding-left: 15px;
+    padding-bottom: 18px;
+    padding-top: 17px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 16px;
+}
+.label_styles:hover {
+    border-color: blue;
+}
+.log_in_butt {
+    display: block;
+    padding: 17px 122px;
+    width: 350px;
+    height: 56px;
+    background-color: #1676F3;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 31px;
+}
+.eye_parent {
+    position: relative;
+}
+.eye_icon1 {
+    display: block;
+    background: url("Shape.svg");
+    width: 20px;
+    height: 12px;
+    position: absolute;
+    top: -50px;
+    left: 88%;
+}
+.checkbox_div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.checkbox_inp {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    background-color: rgba(28, 55, 90, 0.16);
+}
+.checkbox_text{
+    font-weight: 500;
+    font-size: 12px;
+}
+.have_acc {
+    font-weight: 400;
+    font-size: 13px;
+}
+.forgot_link {
+    margin-left: 118px;
+    font-weight: 600;
+    color: black;
+    font-size: 13px;
+}

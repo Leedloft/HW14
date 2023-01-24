@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Plus Jakarta Sans;
 }
 body {
     background: rgb(131,58,180);
@@ -12,3 +13,8 @@ body {
     margin: 0 auto;
     width: 400px;
 }
+
+.todo_list {
+    margin-bottom: 30px;
+}
+

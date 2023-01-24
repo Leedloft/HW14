@@ -1,15 +1,15 @@
 import React from 'react';
-import {useFormContext} from "react-hook-form";
 import styles from "../style.module.css";
+import {useFormContext} from "react-hook-form";
 
-const Button1 = () => {
+const SendButton = () => {
     const {handleSubmit} = useFormContext()
     const onSubmit = data => console.log(data, 'data')
     return (
         <div>
-            <button className={styles.confirm_button} type='submit'>Get Started</button>
+            <button className={styles.log_in_butt} onClick={handleSubmit(onSubmit)}>Log In</button>
         </div>
     );
 };
 
-export default Button1;
+export default SendButton;

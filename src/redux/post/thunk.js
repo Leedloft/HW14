@@ -29,7 +29,7 @@ import {
 const fetchPosts = () => async (dispatch) => {
     dispatch(getPostsRequestActionCreator())
     try {
-        const req = await fetch('https://jsonplaceholder.typicode.com/posts')
+        const req = await fetch('http://localhost:1337/api/pets')
         const parsedData = await req.json()
         setTimeout(() => {
             dispatch(getPostsReceiveActionCreator(parsedData))

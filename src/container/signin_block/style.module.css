@@ -1,0 +1,56 @@
+.container {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 28px;
+    padding-right: 26px;
+    padding-bottom: 27px;
+}
+.title {
+    font-weight: 600;
+    font-size: 22px;
+}
+.background_icon {
+    display: block;
+    background: url("icons/logo.svg") center center/cover no-repeat;
+    width: 168px;
+    height: 92px;
+    margin-left: 86px;
+}
+.google_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 23px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(28, 52, 84, 0.26);
+    border-radius: 4px;
+    height: 56px;
+}
+.google_icon {
+    display: inline-block;
+    background: url("icons/Google__G__Logo 1.svg")  center center/cover no-repeat;
+    width: 19px;
+    height: 19px;
+    margin-right: 20px;
+}
+.google_link {
+    color: rgba(27, 43, 65, 0.72);
+}
+.span_lines{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.or_span {
+    margin-left: 14px;
+    margin-right: 14px;
+    color: rgba(28, 52, 84, 0.26);
+}
+.line {
+    display: block;
+    border-bottom: 1px solid rgba(28, 52, 84, 0.26);
+    width: 126px;
+}

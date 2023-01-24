@@ -1,0 +1,13 @@
+.log_in_butt {
+    display: block;
+    padding: 17px 122px;
+    width: 350px;
+    height: 56px;
+    background-color: #1676F3;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 31px;
+}
